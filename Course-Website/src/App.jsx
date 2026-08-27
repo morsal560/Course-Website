@@ -1,0 +1,18 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+function App() {
+  return(
+    <BrowserRouter>
+    <Routes>
+      <Route  path="/" element={<h1>Home</h1>}/>
+      <Route  path="/about" element={<h1>About</h1>}/>
+      <Route  path="/courses" element={<h1>Courses</h1>}/>
+      <Route  path="/courses/:id" element={<h1>CoursesDetails</h1>}/>
+      <Route  path="/registration" element={<h1>Registration</h1>}/>
+      <Route  path="/contact" element={<h1>Contact</h1>}/>
+    </Routes>
+    </BrowserRouter>
+  );
+  
+}
+export default App;
