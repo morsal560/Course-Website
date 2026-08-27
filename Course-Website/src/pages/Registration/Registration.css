@@ -1,0 +1,140 @@
+.registration-page {
+  padding: 80px 0;
+  background-color: var(--color-background);
+}
+
+.registration-header {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.registration-header h1 {
+  margin-bottom: 15px;
+  color: var(--color-secondary);
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.registration-header p {
+  color: var(--color-text-light);
+  line-height: 1.7;
+}
+
+/* Form */
+
+.registration-form-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.registration-form {
+  padding: 35px;
+
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--shadow-md);
+}
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 13px 14px;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+
+  background-color: var(--color-background);
+  color: var(--color-text);
+
+  outline: none;
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--color-text-light);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.12);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Submit Button */
+
+.form-submit-button {
+  width: 100%;
+  padding: 14px 20px;
+
+  border: none;
+  border-radius: var(--radius-sm);
+
+  background-color: var(--color-primary);
+  color: #ffffff;
+
+  font-weight: 700;
+  cursor: pointer;
+
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form-submit-button:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Success Message */
+
+.success-message {
+  margin-bottom: 20px;
+  padding: 14px;
+
+  border-radius: var(--radius-sm);
+
+  background-color: #ecfdf5;
+  color: #166534;
+
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .registration-page {
+    padding: 60px 0;
+  }
+
+  .registration-form {
+    padding: 24px 20px;
+  }
+}
