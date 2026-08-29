@@ -1,4 +1,4 @@
-import courses from "../../data/courses";
+import courses from "../../data/Courses";
 import CourseList from "../../components/courses/CourseList/CourseList";
 
 function Courses() {
